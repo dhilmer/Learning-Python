@@ -173,7 +173,7 @@ def isValidWord(word, hand, wordList):
     hand: dictionary (string -> int)
     wordList: list of lowercase strings
     """
-    # TO DO ... <-- Remove this comment when you code this function
+    
     hand_copy = dict(hand)
     hand_list = []
     for key, value in hand_copy.items():
