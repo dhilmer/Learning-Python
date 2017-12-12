@@ -173,7 +173,7 @@ def isValidWord(word, hand, wordList):
     hand: dictionary (string -> int)
     wordList: list of lowercase strings
     """
-    
+
     hand_copy = dict(hand)
     hand_list = []
     for key, value in hand_copy.items():
@@ -192,7 +192,7 @@ def isValidWord(word, hand, wordList):
         return False
 
 #
-# Problem #4: Playing a hand
+# Problem #4: Hand length
 #
 
 def calculateHandlen(hand):
@@ -203,8 +203,17 @@ def calculateHandlen(hand):
     returns: integer
     """
     # TO DO... <-- Remove this comment when you code this function
+    hand_copy = dict(hand)
+    hand_list = []
+    for key, value in hand_copy.items():
+        while value > 0:
+            hand_list.append(key)
+            value -= 1
+    return len(hand_list)
 
-
+#
+# Problem #5: Playing a hand
+#
 
 def playHand(hand, wordList, n):
     """
@@ -259,7 +268,7 @@ def playHand(hand, wordList, n):
 
 
 #
-# Problem #5: Playing a game
+# Problem #6: Playing a game
 #
 
 def playGame(wordList):
