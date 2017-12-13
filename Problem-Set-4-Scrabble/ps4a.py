@@ -237,7 +237,7 @@ def playHand(hand, wordList, n):
       n: integer (HAND_SIZE; i.e., hand size required for additional points)
 
     """
-    
+
     # Keep track of the total score
     total_score = 0
     # As long as there are still letters left in the hand:
@@ -263,7 +263,7 @@ def playHand(hand, wordList, n):
                 # Tell the user how many points the word earned, and the updated total score, in one line followed by a blank line
                 current_score = getWordScore(word, n)
                 total_score += current_score
-                print(word,"earned",current_score,"points. Total:", total_score,"points")
+                print('"'+word+'"',"earned",current_score,"points. Total:", total_score,"points\n")
                 # Update the hand
                 hand = updateHand(hand, word)
 
