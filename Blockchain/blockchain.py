@@ -176,4 +176,4 @@ class Blockchain(object):
         'proof': block['proof'],
         'previous_hash': block['previous_hash'],
         }
-        return jsonify(response), 200g
+        return jsonify(response), 200
