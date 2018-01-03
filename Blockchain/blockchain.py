@@ -173,7 +173,7 @@ class Blockchain(object):
         'message': "New Block Forged",
         'index': block['index'],
         'transactions': block['transactions'],
-        'proof': block{'proof'],
+        'proof': block['proof'],
         'previous_hash': block['previous_hash'],
         }
-        return jsonify(response), 200
+        return jsonify(response), 200g
